@@ -7,6 +7,7 @@ import Logo from "../../../assets/logo.jpg"
 import Search from "../../../assets/search.png"
 import setting from "../../../assets/settings.png"
 import question_mark from "../../../assets/help.png"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -48,8 +49,9 @@ const Navbar = () => {
         </div>
 
 
-        <button className='login'>Log in</button>
-        <button className='signin'>Sign up </button>
+        <button className='login'>
+          <Link to="/login">Log in</Link></button>
+        <button className='signin'><Link to="/signup">Sign up</Link></button>
       </div>
 
       <div className="mobileMenuBtn">

@@ -1,0 +1,4 @@
+.form-checkbox:checked{
+    background-image: url("../../assets/check.svg");
+    background-repeat: no-repeat;
+}
